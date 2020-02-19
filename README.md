@@ -42,9 +42,8 @@ optimize(learning_rate) # 오차를 최소화하도록 w, b를 조정
 
 * [Deep Learning with TensorFlow - Second Edition](https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-tensorflow-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788831109)
 
-## 제안과 피디백
-제안 및 피드백: duddhks9244@gmail.com
-
+## 제안과 피드백
+duddhks9244@gmail.com
 
 
 
