@@ -49,7 +49,8 @@ optimize(learning_rate) # 오차를 최소화하도록 w, b를 조정
 
 
 
-2.1.3 macOS
+
+## 2.1.3 macOS
 macOSX에 PyTorch 환경을 구성하는 과정을 소개합니다. 본 문서는 다음과 같은 형식으로 구성됩니다.
 
 Python 3.7 설치
@@ -61,3 +62,129 @@ macOS Mojava를 기준으로 Python3.7를 설치하는 방법을 소개합니다
 다음 URL에서 macOS용 Python 설치 프로그램을 다운로드 받습니다.
 
 https://www.python.org/downloads/release/python-372/[↗NW]
+위 URL에서 Mac용 설치 프로그램을 다운로드하면 다음과 같이 약 30MB의 PKG 파일이 다운로드됩니다. 기본값으로 설치를 진행합니다.
+
+다음 명령으로 Python 3.7.2의 설치 상태를 확인합니다.
+
+```
+$ python3.7 -V
+Python 3.7.2
+$ python3 -V
+Python 3.7.2
+```
+
+
+
+## 2. Anaconda 설치
+다음 URL에서 Mac용 Anaconda 설치 프로그램을 다운로드 받습니다.
+https://www.anaconda.com/distribution/#download-section
+Mac용 Anaconda 설치 프로그램 크기는 684MB입니다.
+
+Anaconda3를 설치하면 다음과 같이 환경 변수를 등록합니다.
+```
+$ pwd
+/Users/taewan
+$ ls ~/anaconda3
+Anaconda-Navigator.app             phrasebooks
+bin                                pkgs
+conda-meta                         plugins
+doc                                python.app
+etc                                qml
+include                            resources
+lib                                sbin
+libexec                            share
+man                                ssl
+mkspecs                            translations
+org.freedesktop.dbus-session.plist
+$ echo 'export PATH="/Users/taewan/anaconda3/bin:$PATH"' >> ~/.bashrc
+$ echo 'export PATH="/Users/taewan/anaconda3/bin:$PATH"' >> ~/.zshrc
+$ source ~/.bashrc
+$ source ~/.zshrc
+$
+```
+
+환경 변수가 변경되면 다음과 같은 명령으로 Anaconda 설치 상태를 확인합니다.
+
+
+```
+$ conda -V
+conda 4.5.12
+$
+```
+
+
+
+## 3. Anaconda 가상환경 구성
+다음 명령을 실행하며 pytorch_env 가상환경을 만들 수 있습니다.
+
+
+```
+~/pytorch $ conda create --name pytorch_env python=3
+## 중간 로그 생략
+
+The following NEW packages will be INSTALLED:
+
+    ca-certificates: 2019.1.23-0
+    certifi:         2018.11.29-py37_0
+    libcxx:          4.0.1-hcfea43d_1
+    libcxxabi:       4.0.1-hcfea43d_1
+    libedit:         3.1.20181209-hb402a30_0
+    libffi:          3.2.1-h475c297_4
+    ncurses:         6.1-h0a44026_1
+    openssl:         1.1.1a-h1de35cc_0
+    pip:             19.0.1-py37_0
+    python:          3.7.2-haf84260_0
+    readline:        7.0-h1de35cc_5
+    setuptools:      40.8.0-py37_0
+    sqlite:          3.26.0-ha441bb4_0
+    tk:              8.6.8-ha441bb4_0
+    wheel:           0.32.3-py37_0
+    xz:              5.2.4-h1de35cc_4
+    zlib:            1.2.11-h1de35cc_3
+
+## 설치 확인 문의 및 동의 ==> y입력
+Proceed ([y]/n)? y
+
+#
+# To activate this environment, use:
+# > source activate pytorch_env
+#
+# To deactivate an active environment, use:
+# > source deactivate
+#
+~/pytorch $
+```
+
+
+## 4. Anaconda 가상환경 활성화 및 패키지 설치
+다음 명령을 실행하여 앞에서 생성한 pytorch_env를 활성화 시킬 수 있습니다.
+
+- torch
+- torchvision
+- torchtext
+- scikit-learn
+- matplotlib
+
+
+```
+~/pytorch $ source activate pytorch_env
+(pytorch_env) ~/pytorch $ conda install -y pytorch-cpu torchvision-cpu -c pytorch
+## 로그 생략
+
+(pytorch_env) ~/pytorch $ conda install -y -c derickl torchtext
+## 로그 생략
+
+(pytorch_env) ~/pytorch $ conda install -y scikit-learn
+## 로그 생략
+
+(pytorch_env) ~/pytorch $ conda install -y matplotlib
+## 로그 생략
+
+(pytorch_env) ~/pytorch $ conda install -y pandas
+## 로그 생략
+
+##가상환경 종료
+(pytorch_env) ~/pytorch $ deactivate 
+
+~/pytorch $
+```
