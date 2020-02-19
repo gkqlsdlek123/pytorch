@@ -44,3 +44,20 @@ optimize(learning_rate) # 오차를 최소화하도록 w, b를 조정
 
 ## 제안과 피디백
 제안 및 피드백: duddhks9244@gmail.com
+
+
+
+
+
+2.1.3 macOS
+macOSX에 PyTorch 환경을 구성하는 과정을 소개합니다. 본 문서는 다음과 같은 형식으로 구성됩니다.
+
+Python 3.7 설치
+Anaconda 설치
+Pytorch 실습을 위한 라이브러리 설치
+1. Python 3.7 설치
+macOS Mojava를 기준으로 Python3.7를 설치하는 방법을 소개합니다.
+
+다음 URL에서 macOS용 Python 설치 프로그램을 다운로드 받습니다.
+
+https://www.python.org/downloads/release/python-372/[↗NW]
