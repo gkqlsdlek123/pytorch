@@ -205,3 +205,32 @@ conda config --add channels abinit
 pip install abipy
 
 ```
+
+
+## 5. Jupyter 실습 환경 구성
+지금까지 파이썬과 실습에 필요한 라이브러리를 모두 설치했습니다. 이번 절에서는 실습 코드를 내려받고 Jupyter Notebook을 실행하는 방법에 대하여 알아보겠습니다.
+실습 코드는 github에서 제공됩니다.
+
+github repository : https://github.com/gkqlsdlek123/pytorch/
+(PyTorch 1.0 지원)
+
+### 5.1 Jupyter Notebook 실행
+다음 명령을 입력하여 Anaconda 가상환경을 활성화 시키고 Github 레파지토리 최상위 디렉터리에서 Jupyter Notebook을 실행합니다.
+```
+ ~/habin_kim/pytorch > source activate pytorch_env
+(pytorch_env)  ~/habin_kim/pytorch > jupyter notebook
+
+[I 16:41:54.001 NotebookApp] Serving notebooks from local directory: /Users/habin_kim/pytorch
+[I 16:41:54.001 NotebookApp] The Jupyter Notebook is running at:
+[I 16:41:54.001 NotebookApp] http://localhost:8888/?token=ffb71cb8ed2b9bf909404fa314074244d394ad97dfd173b6
+[I 16:41:54.001 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:41:54.010 NotebookApp]
+```
+    To access the notebook, open this file in a browser:
+        file:///Users/habin_kim/Library/Jupyter/runtime/nbserver-49921-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8787/?token=ffb71cb8ed2b9bf909404fa314074244d394ad97dfd173b6
+
+위 명령을 입력하면 http://localhost:8787/tree 주소로 기본 브라우저가 실행됩니다. 원격 서버일 경우 위 실행 로그에 출력된 URL로 웹 페이지를 오픈하면 됩니다.
+
+http://localhost:8888/?token=ffb71cb8ed2b9bf909404fa314074244d394ad97dfd173b6
