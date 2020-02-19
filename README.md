@@ -1,10 +1,8 @@
 # [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)
 
-여기는 [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)의 코드 레파지토리입니다. 원서인 [Deep Learning with PyTorch](https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-pytorch?utm_source=github&utm_medium=repository&utm_campaign=9781788624336)는 [Packt](https://www.packtpub.com/?utm_source=github)에서 출간되었고, [에이콘](http://acornpub.co.kr)에서 번역되었습니다. 이 레파지토리는 [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch) 실습에 필요한 모든 파일을 포함합니다.
+여기는 [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)의 코드 레파지토리입니다. 원서인 [Deep Learning with PyTorch](https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-pytorch?utm_source=github&utm_medium=repository&utm_campaign=9781788624336)는 [Packt](https://www.packtpub.com/?utm_source=github)에서 출간되었고, [에이콘](http://acornpub.co.kr)에서 번역되었습니다. 이 repository [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch) 실습에 필요한 모든 파일을 포함합니다.
 
-[PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)의 보강 문서인 [](http://taewan.kim/ml/dl_pytorch/)와 이 레파지토리를 함께 참고하시기 바랍니다.
-
-<a href="http://taewan.kim/ml/dl_pytorch/" target="_blank">![](./images/taewan.jpg)</a>
+[PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)의 보강 문서인 [](https://github.com/gkqlsdlek123/pytorch)와 이 레파지토리를 함께 참고하시기 바랍니다.
 
 ## [PyTorch로 딥러닝 시작하기](http://acornpub.co.kr/book/deep-learning-pytorch)에 대하여...
 
@@ -155,14 +153,15 @@ Proceed ([y]/n)? y
 ```
 
 
+
 ## 4. Anaconda 가상환경 활성화 및 패키지 설치
 다음 명령을 실행하여 앞에서 생성한 pytorch_env를 활성화 시킬 수 있습니다.
 
-- torch
-- torchvision
-- torchtext
-- scikit-learn
-- matplotlib
+* torch
+* torchvision
+* torchtext
+* scikit-learn
+* matplotlib
 
 
 ```
@@ -206,12 +205,16 @@ pip install abipy
 ```
 
 
+
+
 ## 5. Jupyter 실습 환경 구성
 지금까지 파이썬과 실습에 필요한 라이브러리를 모두 설치했습니다. 이번 절에서는 실습 코드를 내려받고 Jupyter Notebook을 실행하는 방법에 대하여 알아보겠습니다.
 실습 코드는 github에서 제공됩니다.
 
 github repository : https://github.com/gkqlsdlek123/pytorch/
 (PyTorch 1.0 지원)
+
+
 
 ### 5.1 Jupyter Notebook 실행
 다음 명령을 입력하여 Anaconda 가상환경을 활성화 시키고 Github 레파지토리 최상위 디렉터리에서 Jupyter Notebook을 실행합니다.
