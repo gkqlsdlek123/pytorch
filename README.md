@@ -45,9 +45,9 @@ duddhks9244@gmail.com
 
 
 
-# 2. 환경 구성
+# 구성
 
-## 2.1.3 macOS
+## 1. macOS 환경
 macOSX에 PyTorch 환경을 구성하는 과정을 소개합니다. 본 문서는 다음과 같은 형식으로 구성됩니다.
 
 Python 3.7 설치
