@@ -188,3 +188,20 @@ Proceed ([y]/n)? y
 
 ~/pytorch $
 ```
+
+```
+!pytorch, torchtext가 install되지 않는다면 다음과같이 수행하면 된다.
+onda install abipy -c abinit
+
+/* on Mac and Linux and python 3.6.6 and the installation completed successfully
+(windows is not supported)
+Did you add conda-forge and matsci to the default channels with */
+
+conda config --add channels conda-forge
+conda config --add channels matsci
+conda config --add channels abinit
+
+/* If this does not solve your problem, you may try inside your conda environment. */
+pip install abipy
+
+```
